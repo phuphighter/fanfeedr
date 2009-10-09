@@ -10,11 +10,27 @@ module Fanfeedr
 	end
 	
 	def self.team_scores(league, team)
-		response = HTTParty.get("http://api.fanfeedr.com/scores?resource=team://#{league}/#{team}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
+    response = []
+		results = HTTParty.get("http://api.fanfeedr.com/scores?resource=team://#{league}/#{team}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
+
+    results.each do |r|
+      score_details = CGI::parse(r['str'][0])
+      response << score_details
+    end
+
+    response
 	end
 
-	def self.league_scores(league)	
-		response = HTTParty.get("http://api.fanfeedr.com/scores?resource=league://#{league}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
+	def self.league_scores(league)
+    response = []	
+		results = HTTParty.get("http://api.fanfeedr.com/scores?resource=league://#{league}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
+
+    results.each do |r|
+      score_details = CGI::parse(r['str'][0])
+      response << score_details
+    end
+
+    response
 	end
 	
 	def self.team_resource_feed(league, team)

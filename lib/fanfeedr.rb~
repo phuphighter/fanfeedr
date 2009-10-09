@@ -5,24 +5,20 @@ require 'httparty'
 
 module Fanfeedr
 
-#  class Scores
-
-#    def initialize(league,team)
-#      @league, @team = league, team
-#    end
-
-#  	def team_scores(league, team)
-#  		response = HTTParty.get("http://api.fanfeedr.com/scores?resource=team://#{league}/#{team}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
-#  	end
-
-#  end
-
 	def self.schedule(league, team)
 		response = HTTParty.get("http://api.fanfeedr.com/schedule?resource=team://#{league}/#{team}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :json)
 	end
 	
 	def self.team_scores(league, team)
-		response = HTTParty.get("http://api.fanfeedr.com/scores?resource=team://#{league}/#{team}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
+    response = []
+		results = HTTParty.get("http://api.fanfeedr.com/scores?resource=team://#{league}/#{team}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
+
+    results.each do |r|
+      score_details = CGI::parse(r['str'][0])
+      response << score_details
+    end
+
+    response
 	end
 
 	def self.league_scores(league)	
