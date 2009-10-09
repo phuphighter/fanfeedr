@@ -11,7 +11,7 @@ module Fanfeedr
 	
 	def self.team_scores(league, team)
     response = []
-		results = HTTParty.get("http://api.fanfeedr.com/scores?resource=team://#{league}/#{team}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
+    results = HTTParty.get("http://api.fanfeedr.com/scores?resource=team://#{league}/#{team}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
 
     results.each do |r|
       score_details = CGI::parse(r['str'][0])
@@ -23,7 +23,7 @@ module Fanfeedr
 
 	def self.league_scores(league)
     response = []	
-		results = HTTParty.get("http://api.fanfeedr.com/scores?resource=league://#{league}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
+    results = HTTParty.get("http://api.fanfeedr.com/scores?resource=league://#{league}&appid=zpeyk4taevn7rc9en7j34zc4", :format => :xml)["response"]["result"]["doc"]
 
     results.each do |r|
       score_details = CGI::parse(r['str'][0])
