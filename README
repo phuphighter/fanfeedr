@@ -34,6 +34,7 @@ Team News Feed: Fanfeedr.team_resource_feed('nfl','ny_giants')
 
 League News Feed: Fanfeedr.league_resource feed('nfl')
 
+Get News Feed by Geo-location using long/lat: Fanfeedr.geo_feed(longitude, latitude)
 
 This pulls the article from a resource feed.
 

@@ -5,6 +5,10 @@ require 'httparty'
 
 module Fanfeedr
 
+	def self.geo_feed(longitude, latitude)
+    response = HTTParty.get("http://api.fanfeedr.com/geo_feed?long=#{longitude}&lat=#{latitude}&appid=#{FANFEEDR_APPLICATION_ID}", :format => :xml)["response"]["result"]["doc"]
+	end
+
 	def self.schedule(league, team)
 		response = HTTParty.get("http://api.fanfeedr.com/schedule?resource=team://#{league}/#{team}&appid=#{FANFEEDR_APPLICATION_ID}", :format => :json)
 	end

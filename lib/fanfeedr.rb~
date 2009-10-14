@@ -5,6 +5,18 @@ require 'httparty'
 
 module Fanfeedr
 
+	def self.geo_feed(longitude, latitude)
+#    response = []
+    response = HTTParty.get("http://api.fanfeedr.com/geo_feed?long=#{longitude}&lat=#{latitude}&appid=#{FANFEEDR_APPLICATION_ID}", :format => :xml)["response"]["result"]["doc"]
+
+#    results.each do |r|
+#      score_details = CGI::parse(r['str'][0])
+#      response << score_details
+#    end
+
+#    response
+	end
+
 	def self.schedule(league, team)
 		response = HTTParty.get("http://api.fanfeedr.com/schedule?resource=team://#{league}/#{team}&appid=#{FANFEEDR_APPLICATION_ID}", :format => :json)
 	end
@@ -24,18 +36,6 @@ module Fanfeedr
 	def self.league_scores(league)
     response = []	
     results = HTTParty.get("http://api.fanfeedr.com/scores?resource=league://#{league}&appid=#{FANFEEDR_APPLICATION_ID}", :format => :xml)["response"]["result"]["doc"]
-
-    results.each do |r|
-      score_details = CGI::parse(r['str'][0])
-      response << score_details
-    end
-
-    response
-	end
-
-	def self.event(date)
-    response = []
-    results = HTTParty.get("http://api.fanfeedr.com/scores?eventlink=event://#{date}&appid=#{FANFEEDR_APPLICATION_ID}", :format => :xml)["response"]["result"]["doc"]
 
     results.each do |r|
       score_details = CGI::parse(r['str'][0])
