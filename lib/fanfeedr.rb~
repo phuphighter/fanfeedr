@@ -32,6 +32,18 @@ module Fanfeedr
 
     response
 	end
+
+	def self.event(date)
+    response = []
+    results = HTTParty.get("http://api.fanfeedr.com/scores?eventlink=event://#{date}&appid=#{FANFEEDR_APPLICATION_ID}", :format => :xml)["response"]["result"]["doc"]
+
+    results.each do |r|
+      score_details = CGI::parse(r['str'][0])
+      response << score_details
+    end
+
+    response
+	end
 	
 	def self.team_resource_feed(league, team)
 		response = HTTParty.get("http://api.fanfeedr.com/resource_feed?resource=team://#{league}/#{team}&n&appid=#{FANFEEDR_APPLICATION_ID}&format=json", :format => :json)["docs"]
