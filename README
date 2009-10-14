@@ -30,6 +30,8 @@ Team Scores: Fanfeedr.team_scores('nfl','ny_giants')
 
 League Scores: Fanfeedr.league_scores('nfl')
 
+Scores by Date: Fanfeedr.event('20091014')
+
 Team News Feed: Fanfeedr.team_resource_feed('nfl','ny_giants')
 
 League News Feed: Fanfeedr.league_resource feed('nfl')

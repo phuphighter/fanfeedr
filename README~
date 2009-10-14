@@ -39,4 +39,6 @@ This pulls the article from a resource feed.
 
 Get Article: Fanfeedr.get_article("http://www.bigblueview.com/2009/10/9/1077817/fantasy-football-friday-giants-vs")
 
+
+
 Copyright (c) 2009 Johnny Khai Nguyen, released under the MIT license
