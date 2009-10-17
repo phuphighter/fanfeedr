@@ -48,5 +48,13 @@ module Fanfeedr
 	def self.get_article(resource)	
 		response = HTTParty.get("http://api.fanfeedr.com/get_article?resource=article://#{resource}&appid=#{FANFEEDR_APPLICATION_ID}")
 	end
+	
+	def self.recap(event_resource)	
+		response = HTTParty.get("http://api.fanfeedr.com/recap?resource=#{event_resource}&appid=#{FANFEEDR_APPLICATION_ID}")
+	end
+	
+	def self.boxscore(event_resource)	
+		response = HTTParty.get("http://api.fanfeedr.com/boxscore?resource=#{event_resource}&appid=#{FANFEEDR_APPLICATION_ID}")
+	end
 
 end
