@@ -37,11 +37,11 @@ module Fanfeedr
     response
 	end
 	
-	def self.team_resource_feed(league, team)
+	def self.team_feed(league, team)
 		response = HTTParty.get("http://api.fanfeedr.com/resource_feed?resource=team://#{league}/#{team}&n&appid=#{FANFEEDR_APPLICATION_ID}&format=json", :format => :json)["docs"]
 	end
 
-	def self.league_resource_feed(league)	
+	def self.league_feed(league)	
 		response = HTTParty.get("http://api.fanfeedr.com/resource_feed?resource=league://#{league}&appid=#{FANFEEDR_APPLICATION_ID}&format=json", :format => :json)["docs"]
 	end
 	
@@ -55,6 +55,26 @@ module Fanfeedr
 	
 	def self.boxscore(event_resource)	
 		response = HTTParty.get("http://api.fanfeedr.com/boxscore?resource=#{event_resource}&appid=#{FANFEEDR_APPLICATION_ID}")
+	end
+	
+	def self.schedule_resource(resource_path)
+		response = HTTParty.get("http://api.fanfeedr.com/schedule?resource=#{resource_path}&appid=#{FANFEEDR_APPLICATION_ID}", :format => :json)
+	end
+	
+	def self.scores_resource(resource_path)
+    response = []
+    results = HTTParty.get("http://api.fanfeedr.com/scores?resource=#{resource_path}&appid=#{FANFEEDR_APPLICATION_ID}", :format => :xml)["response"]["result"]["doc"]
+
+    results.each do |r|
+      score_details = CGI::parse(r['str'][0])
+      response << score_details
+    end
+
+    response
+	end
+	
+	def self.resource_feed(resource_path)
+		response = HTTParty.get("http://api.fanfeedr.com/resource_feed?resource=#{resource_path}&n&appid=#{FANFEEDR_APPLICATION_ID}&format=json", :format => :json)["docs"]
 	end
 
 end

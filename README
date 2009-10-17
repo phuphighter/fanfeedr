@@ -1,7 +1,7 @@
 Fanfeedr
 ========
 
-This is just a simple Ruby wrapper for the Fanfeedr API.  It is untested and still developing for the time being.
+This is just a simple Ruby wrapper for the Fanfeedr API.  It is untested and still in development for the time being.
 
 http://developer.fanfeedr.com/
 
@@ -40,5 +40,11 @@ Boxscore and Recap are a work in progress at Fanfeedr but you can still get the 
 Boxscore: Fanfeedr.boxscore('event://20091004nfl--kansascity0')
 Recap: Fanfeedr.recap('event://20091004nfl--kansascity0')
 
+If you'd prefer to just use the resource path
+Schedules: Fanfeedr.schedule_resource('team://nfl/ny_giants')
+Scores: Fanfeedr.scores_resource('team://nfl/ny_giants')
+News Feed: Fanfeedr.resource_feed('team://nfl/ny_giants')
+
+Contact me if you have any suggestions!
 
 Copyright (c) 2009 Johnny Khai Nguyen, released under the MIT license
