@@ -27,8 +27,8 @@ These methods take the league name or league and teamname.  They return an array
 Schedules: Fanfeedr.schedule('nfl','ny_giants')
 Team Scores: Fanfeedr.team_scores('nfl','ny_giants')
 League Scores: Fanfeedr.league_scores('nfl')
-Team News Feed: Fanfeedr.team_resource_feed('nfl','ny_giants')
-League News Feed: Fanfeedr.league_resource feed('nfl')
+Team News Feed: Fanfeedr.team_feed('nfl','ny_giants')
+League News Feed: Fanfeedr.league_feed('nfl')
 
 Get News Feed by Geo-location using long/lat 
 Geo Feed: Fanfeedr.geo_feed(longitude, latitude)
