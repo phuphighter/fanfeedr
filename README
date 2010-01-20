@@ -1,7 +1,7 @@
 Fanfeedr
 ========
 
-This is just a simple Ruby wrapper for the Fanfeedr API.  It is untested and still in development for the time being.
+This is a Ruby wrapper and Rails plugin Fanfeedr API.
 
 http://developer.fanfeedr.com/
 
@@ -46,6 +46,6 @@ Schedules: Fanfeedr.schedule_resource('team://nfl/ny_giants')
 Scores: Fanfeedr.scores_resource('team://nfl/ny_giants')
 News Feed: Fanfeedr.resource_feed('team://nfl/ny_giants')
 
-Contact me if you have any suggestions!
+Contact me if you have any suggestions and feel free to fork it!
 
 Copyright (c) 2009 Johnny Khai Nguyen, released under the MIT license
