@@ -1,4 +1,4 @@
-# Fred
+# Fanfeedr
 require 'rubygems'
 gem 'httparty'
 require 'httparty'
@@ -36,4 +36,4 @@ module Fanfeedr
   
 end
 
-require File.join(directory, 'fred', 'client')
+require File.join(directory, 'fanfeedr', 'client')
