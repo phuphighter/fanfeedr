@@ -1,6 +1,24 @@
+require 'rubygems'
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gem|
+    gem.name = "fanfeedr"
+    gem.summary = %Q{Ruby wrapper for the Fanfeedr API}
+    gem.description = %Q{Ruby wrapper for the Fanfeedr API}
+    gem.email = "johnnyn@gmail.com"
+    gem.homepage = "http://github.com/phuphighter/fanfeedr"
+    gem.authors = ["Johnny Khai Nguyen"]
+    
+    gem.add_dependency('httparty', '>= 0.5.0')
+  end
+  Jeweler::GemcutterTasks.new
+rescue LoadError
+  puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
+end
 
 desc 'Default: run unit tests.'
 task :default => :test

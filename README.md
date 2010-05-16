@@ -4,7 +4,11 @@ This is a Ruby wrapper for the [Fanfeedr API](http://developer.fanfeedr.com/).
 
 ## Installation
 
-In your Rails directory:
+As a gem:
+
+    sudo gem install fanfeedr
+
+As a plugin (in your Rails directory:
 
     script/plugin install git://github.com/phuphighter/fanfeedr.git
     
