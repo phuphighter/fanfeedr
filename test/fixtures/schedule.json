@@ -1,1 +1,206 @@
-[{"name"=>"Georgia Bulldogs @ Oklahoma St Cowboys", "time"=>"15:30:00", "date"=>Sat, 05 Sep 2009, "away"=>{"winlose"=>"L", "team"=>"team://ncaa_football/georgia_bulldogs", "score"=>"10"}, "status"=>"FINAL", "home"=>{"winlose"=>"W", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"24"}, "resource_text"=>"event://20090905ncaafoklast----0"}, {"name"=>"Houston Cougars @ Oklahoma St Cowboys", "time"=>"15:30:00", "date"=>Sat, 12 Sep 2009, "away"=>{"winlose"=>"W", "team"=>"team://ncaa_football/houston_cougars", "score"=>"45"}, "status"=>"FINAL", "home"=>{"winlose"=>"L", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"35"}, "resource_text"=>"event://20090912ncaafoklast----0"}, {"name"=>"Rice Owls @ Oklahoma St Cowboys", "time"=>"19:00:00", "date"=>Sat, 19 Sep 2009, "away"=>{"winlose"=>"L", "team"=>"team://ncaa_football/rice_owls", "score"=>"24"}, "status"=>"FINAL", "home"=>{"winlose"=>"W", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"41"}, "resource_text"=>"event://20090919ncaafoklast----0"}, {"name"=>"Oklahoma St Cowboys @ Texas A&M Aggies", "time"=>"12:30:00", "date"=>Sat, 10 Oct 2009, "away"=>{"winlose"=>"W", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"36"}, "status"=>"FINAL", "home"=>{"winlose"=>"L", "team"=>"team://ncaa_football/texas_am_aggies", "score"=>"31"}, "resource_text"=>"event://20091010ncaaftexasam---0"}, {"name"=>"Missouri Tigers @ Oklahoma St Cowboys", "time"=>"21:15:00", "date"=>Sat, 17 Oct 2009, "away"=>{"winlose"=>"L", "team"=>"team://ncaa_football/missouri_tigers", "score"=>"17"}, "status"=>"FINAL", "home"=>{"winlose"=>"W", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"33"}, "resource_text"=>"event://20091017ncaafoklast----0"}, {"name"=>"Oklahoma St Cowboys @ Baylor Bears", "time"=>"12:30:00", "date"=>Sat, 24 Oct 2009, "away"=>{"winlose"=>"W", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"34"}, "status"=>"FINAL", "home"=>{"winlose"=>"L", "team"=>"team://ncaa_football/baylor_bears", "score"=>"7"}, "resource_text"=>"event://20091024ncaafbaylor----0"}, {"name"=>"Texas Longhorns @ Oklahoma St Cowboys", "time"=>"20:00:00", "date"=>Sat, 31 Oct 2009, "away"=>{"winlose"=>"W", "team"=>"team://ncaa_football/texas_longhorns", "score"=>"41"}, "status"=>"FINAL", "home"=>{"winlose"=>"L", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"14"}, "resource_text"=>"event://20091031ncaafoklast----0"}, {"name"=>"Oklahoma St Cowboys @ Iowa St Cyclones", "time"=>"15:30:00", "date"=>Sat, 07 Nov 2009, "away"=>{"winlose"=>"W", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"34"}, "status"=>"FINAL", "home"=>{"winlose"=>"L", "team"=>"team://ncaa_football/iowa_st_cyclones", "score"=>"8"}, "resource_text"=>"event://20091107ncaafiowast----0"}, {"name"=>"Texas Tech Red Raiders @ Oklahoma St Cowboys", "time"=>"20:00:00", "date"=>Sat, 14 Nov 2009, "away"=>{"winlose"=>"L", "team"=>"team://ncaa_football/texas_tech_red_raiders", "score"=>"17"}, "status"=>"FINAL", "home"=>{"winlose"=>"W", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"24"}, "resource_text"=>"event://20091114ncaafoklast----0"}, {"name"=>"Colorado Buffaloes @ Oklahoma St Cowboys", "time"=>"19:30:00", "date"=>Thu, 19 Nov 2009, "away"=>{"winlose"=>"L", "team"=>"team://ncaa_football/colorado_buffaloes", "score"=>"28"}, "status"=>"FINAL", "home"=>{"winlose"=>"W", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"31"}, "resource_text"=>"event://20091119ncaafoklast----0"}, {"name"=>"Oklahoma St Cowboys @ Oklahoma Sooners", "time"=>"12:30:00", "date"=>Sat, 28 Nov 2009, "away"=>{"winlose"=>"L", "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>"0"}, "status"=>"FINAL", "home"=>{"winlose"=>"W", "team"=>"team://ncaa_football/oklahoma_sooners", "score"=>"27"}, "resource_text"=>"event://20091128ncaafoklahoma--0"}, {"name"=>"Oklahoma St Cowboys @ Ole Miss Rebels", "time"=>"14:00:00", "date"=>Sat, 02 Jan 2010, "away"=>{"winlose"=>nil, "team"=>"team://ncaa_football/oklahoma_st_cowboys", "score"=>nil}, "status"=>nil, "home"=>{"winlose"=>nil, "team"=>"team://ncaa_football/ole_miss_rebels", "score"=>nil}, "resource_text"=>"event://20100102ncaafolemiss---0"}]
+[
+    {
+        "away": {
+            "score": "10", 
+            "team": "team://ncaa_football/georgia_bulldogs", 
+            "winlose": "L"
+        }, 
+        "date": "2009-09-05", 
+        "home": {
+            "score": "24", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "W"
+        }, 
+        "name": "Georgia Bulldogs @ Oklahoma St Cowboys", 
+        "resource_text": "event://ncaa_football/2009/09/05/games/georgia_bulldogs_oklahoma_st_cowboys", 
+        "status": "FINAL", 
+        "time": "15:30:00"
+    }, 
+    {
+        "away": {
+            "score": "45", 
+            "team": "team://ncaa_football/houston_cougars", 
+            "winlose": "W"
+        }, 
+        "date": "2009-09-12", 
+        "home": {
+            "score": "35", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "L"
+        }, 
+        "name": "Houston Cougars @ Oklahoma St Cowboys", 
+        "resource_text": "event://ncaa_football/2009/09/12/games/houston_cougars_oklahoma_st_cowboys", 
+        "status": "FINAL", 
+        "time": "15:30:00"
+    }, 
+    {
+        "away": {
+            "score": "24", 
+            "team": "team://ncaa_football/rice_owls", 
+            "winlose": "L"
+        }, 
+        "date": "2009-09-19", 
+        "home": {
+            "score": "41", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "W"
+        }, 
+        "name": "Rice Owls @ Oklahoma St Cowboys", 
+        "resource_text": "event://ncaa_football/2009/09/19/games/rice_owls_oklahoma_st_cowboys", 
+        "status": "FINAL", 
+        "time": "19:00:00"
+    }, 
+    {
+        "away": {
+            "score": "36", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "W"
+        }, 
+        "date": "2009-10-10", 
+        "home": {
+            "score": "31", 
+            "team": "team://ncaa_football/texas_am_aggies", 
+            "winlose": "L"
+        }, 
+        "name": "Oklahoma St Cowboys @ Texas A&M Aggies", 
+        "resource_text": "event://ncaa_football/2009/10/10/games/oklahoma_st_cowboys_texas_am_aggies", 
+        "status": "FINAL", 
+        "time": "12:30:00"
+    }, 
+    {
+        "away": {
+            "score": "17", 
+            "team": "team://ncaa_football/missouri_tigers", 
+            "winlose": "L"
+        }, 
+        "date": "2009-10-17", 
+        "home": {
+            "score": "33", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "W"
+        }, 
+        "name": "Missouri Tigers @ Oklahoma St Cowboys", 
+        "resource_text": "event://ncaa_football/2009/10/17/games/missouri_tigers_oklahoma_st_cowboys", 
+        "status": "FINAL", 
+        "time": "21:15:00"
+    }, 
+    {
+        "away": {
+            "score": "34", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "W"
+        }, 
+        "date": "2009-10-24", 
+        "home": {
+            "score": "7", 
+            "team": "team://ncaa_football/baylor_bears", 
+            "winlose": "L"
+        }, 
+        "name": "Oklahoma St Cowboys @ Baylor Bears", 
+        "resource_text": "event://ncaa_football/2009/10/24/games/oklahoma_st_cowboys_baylor_bears", 
+        "status": "FINAL", 
+        "time": "12:30:00"
+    }, 
+    {
+        "away": {
+            "score": "41", 
+            "team": "team://ncaa_football/texas_longhorns", 
+            "winlose": "W"
+        }, 
+        "date": "2009-10-31", 
+        "home": {
+            "score": "14", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "L"
+        }, 
+        "name": "Texas Longhorns @ Oklahoma St Cowboys", 
+        "resource_text": "event://ncaa_football/2009/10/31/games/texas_longhorns_oklahoma_st_cowboys", 
+        "status": "FINAL", 
+        "time": "20:00:00"
+    }, 
+    {
+        "away": {
+            "score": "34", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "W"
+        }, 
+        "date": "2009-11-07", 
+        "home": {
+            "score": "8", 
+            "team": "team://ncaa_football/iowa_st_cyclones", 
+            "winlose": "L"
+        }, 
+        "name": "Oklahoma St Cowboys @ Iowa St Cyclones", 
+        "resource_text": "event://ncaa_football/2009/11/07/games/oklahoma_st_cowboys_iowa_st_cyclones", 
+        "status": "FINAL", 
+        "time": "15:30:00"
+    }, 
+    {
+        "away": {
+            "score": "17", 
+            "team": "team://ncaa_football/texas_tech_red_raiders", 
+            "winlose": "L"
+        }, 
+        "date": "2009-11-14", 
+        "home": {
+            "score": "24", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "W"
+        }, 
+        "name": "Texas Tech Red Raiders @ Oklahoma St Cowboys", 
+        "resource_text": "event://ncaa_football/2009/11/14/games/texas_tech_red_raiders_oklahoma_st_cowboys", 
+        "status": "FINAL", 
+        "time": "20:00:00"
+    }, 
+    {
+        "away": {
+            "score": "28", 
+            "team": "team://ncaa_football/colorado_buffaloes", 
+            "winlose": "L"
+        }, 
+        "date": "2009-11-19", 
+        "home": {
+            "score": "31", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "W"
+        }, 
+        "name": "Colorado Buffaloes @ Oklahoma St Cowboys", 
+        "resource_text": "event://ncaa_football/2009/11/19/games/colorado_buffaloes_oklahoma_st_cowboys", 
+        "status": "FINAL", 
+        "time": "19:30:00"
+    }, 
+    {
+        "away": {
+            "score": "0", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "L"
+        }, 
+        "date": "2009-11-28", 
+        "home": {
+            "score": "27", 
+            "team": "team://ncaa_football/oklahoma_sooners", 
+            "winlose": "W"
+        }, 
+        "name": "Oklahoma St Cowboys @ Oklahoma Sooners", 
+        "resource_text": "event://ncaa_football/2009/11/28/games/oklahoma_st_cowboys_oklahoma_sooners", 
+        "status": "FINAL", 
+        "time": "12:30:00"
+    }, 
+    {
+        "away": {
+            "score": "7", 
+            "team": "team://ncaa_football/oklahoma_st_cowboys", 
+            "winlose": "L"
+        }, 
+        "date": "2010-01-02", 
+        "home": {
+            "score": "21", 
+            "team": "team://ncaa_football/ole_miss_rebels", 
+            "winlose": "W"
+        }, 
+        "name": "Oklahoma St Cowboys @ Ole Miss Rebels", 
+        "resource_text": "event://ncaa_football/2010/01/02/games/oklahoma_st_cowboys_ole_miss_rebels", 
+        "status": "FINAL", 
+        "time": "14:00:00"
+    }
+]

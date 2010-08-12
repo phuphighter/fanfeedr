@@ -1,0 +1,73 @@
+?xml version='1.0' encoding='UTF-8'?>
+<response>
+  <result numFound="2" start="0">
+    <doc type="article">
+      <date name="sort.date">2009-07-14T07:00:00Z</date>
+      <str name="sort.dateRecency">8 hours ago</str>
+      <str name="rssFeed.url"><![CDATA[http://feedproxy.google.com/latimes/sports?format=xml]]></str>
+      <str name="rssFeed.resource"><![CDATA[source://la_times/sports]]></str>
+      <str name="rssFeed.name"><![CDATA[Sports]]></str>
+      <str name="rssFeed.favicon.resource"><![CDATA[favicon://2/29d2ec3c26ba5da9a0bff445efa81336.png]]></str>
+      <str name="rssFeed.id"><![CDATA[8a7ef640-efac-5764-8096-c401b7973751]]></str>
+      <str name="docType"><![CDATA[article]]></str>
+      <str name="origin.name"><![CDATA[LA Times]]></str>
+      <str name="entity.id"><![CDATA[e204e940-cc3f-5523-9c71-0276670be977]]></str>
+      <str name="entityStat.commentCount"><![CDATA[0]]></str>
+      <str name="entityStat.viewCount"><![CDATA[0]]></str>
+      <str name="entity.displayDateRecency"><![CDATA[8 hours ago]]></str>
+      <str name="entity.resource"><![CDATA[article://mlb/2009/07/14/baseball_isnt_as_much_fun_anymore_for_ex_angel_francisco_rodrigu]]></str>
+      <str name="entity.resourcePath"><![CDATA[/mlb/2009/07/14/baseball_isnt_as_much_fun_anymore_for_ex_angel_francisco_rodrigu]]></str>
+      <str name="entityStat.rating"><![CDATA[-1]]></str>
+      <str name="entityStat.downvotes"><![CDATA[0]]></str>
+      <str name="entityStat.hotness"><![CDATA[19.5261865421]]></str>
+      <str name="entityStat.upvotes"><![CDATA[0]]></str>
+      <str name="image.resource"><![CDATA[http://images.fanfeedr.com/2009/07/14/1/i1a4a02189114550fa2db3c6dfd0c78f1.gif]]></str>
+      <str name="entity.name"><![CDATA[Baseball isn't as much fun anymore for ex-Angel Francisco Rodriguez]]></str>
+      <date name="entity.displayDate"><![CDATA[2009-07-14T07:00:00Z]]></date>
+      <str name="rssFeed.level"><![CDATA[all]]></str>
+      <str name="entity.type"><![CDATA[article]]></str>
+      <str name="article.link"><![CDATA[http://feedproxy.google.com/~r/latimes/sports/~3/LmoR7uUokI0/la-sp-k-rod14-2009jul14,0,1103518.story]]></str>
+      <str name="origin.resource"><![CDATA[origin://la_times]]></str>
+      <str name="article.type"><![CDATA[rss]]></str>
+      <str name="entityStat.fanCount"><![CDATA[0]]></str>
+      <str name="rssFeed.type"><![CDATA[news]]></str>
+      <str name="score"><![CDATA[1.0]]></str>
+      <str name="entityStat.hotnessDebug"><![CDATA[0.9763|0.0000|0.0000|0.0000|0.0000|0.0000]]></str>
+      <str name="origin.id"><![CDATA[d5fa6753-f638-5afe-9673-0dd927981b44]]></str>
+      <str name="entity.lang"><![CDATA[EN]]></str>
+    </doc>
+    <doc type="article">
+      <date name="sort.date">2009-07-14T04:58:28Z</date>
+      <str name="sort.dateRecency">10 hours ago</str>
+      <str name="rssFeed.url"><![CDATA[http://www.jsonline.com/rss/?c=y&path=/sports]]></str>
+      <str name="rssFeed.resource"><![CDATA[source://milwaukee_journal_sentinel/sports]]></str>
+      <str name="rssFeed.name"><![CDATA[Sports]]></str>
+      <str name="rssFeed.id"><![CDATA[77e3e692-1ff8-57b1-86a4-e20010735311]]></str>
+      <str name="docType"><![CDATA[article]]></str>
+      <str name="origin.name"><![CDATA[Milwaukee Journal-Sentinel]]></str>
+      <str name="entity.id"><![CDATA[97cd486d-e6b3-5802-80bb-e6f341269d60]]></str>
+      <str name="entityStat.commentCount"><![CDATA[0]]></str>
+      <str name="entityStat.viewCount"><![CDATA[1]]></str>
+      <str name="entity.displayDateRecency"><![CDATA[10 hours ago]]></str>
+      <str name="entity.resource"><![CDATA[article://nfl/2009/07/14/franks_gets_released_by_jets]]></str>
+      <str name="entity.resourcePath"><![CDATA[/nfl/2009/07/14/franks_gets_released_by_jets]]></str>
+      <str name="entityStat.rating"><![CDATA[-1]]></str>
+      <str name="entityStat.downvotes"><![CDATA[0]]></str>
+      <str name="entityStat.hotness"><![CDATA[17.9846696678]]></str>
+      <str name="entityStat.upvotes"><![CDATA[0]]></str>
+      <str name="entity.name"><![CDATA[Franks gets released by Jets]]></str>
+      <date name="entity.displayDate"><![CDATA[2009-07-14T04:58:28Z]]></date>
+      <str name="rssFeed.level"><![CDATA[all]]></str>
+      <str name="entity.type"><![CDATA[article]]></str>
+      <str name="article.link"><![CDATA[http://www.jsonline.com/sports/50685852.html]]></str>
+      <str name="origin.resource"><![CDATA[origin://milwaukee_journal_sentinel]]></str>
+      <str name="article.type"><![CDATA[rss]]></str>
+      <str name="entityStat.fanCount"><![CDATA[0]]></str>
+      <str name="rssFeed.type"><![CDATA[news]]></str>
+      <str name="score"><![CDATA[1.0]]></str>
+      <str name="entityStat.hotnessDebug"><![CDATA[0.8881|0.0000|0.0111|0.0000|0.0000|0.0000]]></str>
+      <str name="origin.id"><![CDATA[07c521d4-c59b-5ef1-814d-6c6bdf81b411]]></str>
+      <str name="entity.lang"><![CDATA[EN]]></str>
+    </doc>
+  </result>
+</response>
