@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fanfeedr (0.1.0)
+    fanfeedr (0.2.0)
       hashie
       httparty
       json
