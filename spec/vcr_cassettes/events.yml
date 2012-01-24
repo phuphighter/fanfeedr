@@ -1,0 +1,149 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/events?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      age: 
+      - "0"
+      date: 
+      - Tue, 24 Jan 2012 17:48:06 GMT
+      content-type: 
+      - application/json
+      connection: 
+      - keep-alive
+      cache-control: 
+      - no-cache
+      pragma: 
+      - no-cache
+      content-length: 
+      - "2"
+      x-mashery-responder: 
+      - proxylb-p-us-east-1d-09.mashery.com
+      via: 
+      - 1.1 varnish
+      x-varnish: 
+      - "1306975622"
+      accept-ranges: 
+      - bytes
+      server: 
+      - nginx/1.0.10
+    body: "[]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/events/today?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Tue, 24 Jan 2012 17:48:06 GMT
+      age: 
+      - "0"
+      content-type: 
+      - application/json
+      connection: 
+      - keep-alive
+      cache-control: 
+      - no-cache
+      pragma: 
+      - no-cache
+      x-mashery-responder: 
+      - proxylb-p-us-east-1d-07.mashery.com
+      content-length: 
+      - "2"
+      via: 
+      - 1.1 varnish
+      x-varnish: 
+      - "1306975623"
+      server: 
+      - nginx/1.0.10
+      accept-ranges: 
+      - bytes
+    body: "[]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/events/next?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      age: 
+      - "0"
+      date: 
+      - Tue, 24 Jan 2012 17:48:07 GMT
+      content-type: 
+      - application/json
+      connection: 
+      - keep-alive
+      cache-control: 
+      - no-cache
+      pragma: 
+      - no-cache
+      content-length: 
+      - "4278"
+      x-mashery-responder: 
+      - proxylb-p-us-east-1d-08.mashery.com
+      via: 
+      - 1.1 varnish
+      x-varnish: 
+      - "1306975625"
+      accept-ranges: 
+      - bytes
+      server: 
+      - nginx/1.0.10
+    body: "[{\"status\": null, \"home_team\": {\"abr\": \"OAK\", \"score\": 0, \"id\": \"979fe516-eaa3-5a66-9813-2cf4d8b6d24d\", \"name\": \"Oakland A's\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"SEA\", \"score\": 0, \"id\": \"58211742-c2eb-5306-9193-3488c1de5656\", \"name\": \"Seattle Mariners\"}, \"name\": \"Seattle Mariners @ Oakland A's\", \"date\": \"2012-03-02T20:05:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"1b9bc0d7-2964-417d-81cd-d4fee90311d2\"}, {\"status\": null, \"home_team\": {\"abr\": \"OAK\", \"score\": 0, \"id\": \"979fe516-eaa3-5a66-9813-2cf4d8b6d24d\", \"name\": \"Oakland A's\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"SEA\", \"score\": 0, \"id\": \"58211742-c2eb-5306-9193-3488c1de5656\", \"name\": \"Seattle Mariners\"}, \"name\": \"Seattle Mariners @ Oakland A's\", \"date\": \"2012-03-02T20:05:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"23919b7d-afe1-46d9-bd85-514c8a6c3ef2\"}, {\"status\": null, \"home_team\": {\"abr\": \"COL\", \"score\": 0, \"id\": \"f0d7a0fc-2ad1-51e5-93b0-c3e89b00a0cd\", \"name\": \"Colorado Rockies\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"ARI\", \"score\": 0, \"id\": \"f4d21620-75da-53cc-b9f2-4b463e7232ab\", \"name\": \"Arizona Diamondbacks\"}, \"name\": \"Arizona Diamondbacks @ Colorado Rockies\", \"date\": \"2012-03-03T20:10:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"41a16c9f-0188-4730-9342-88e82cf3568f\"}, {\"status\": null, \"home_team\": {\"abr\": \"COL\", \"score\": 0, \"id\": \"f0d7a0fc-2ad1-51e5-93b0-c3e89b00a0cd\", \"name\": \"Colorado Rockies\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"ARI\", \"score\": 0, \"id\": \"f4d21620-75da-53cc-b9f2-4b463e7232ab\", \"name\": \"Arizona Diamondbacks\"}, \"name\": \"Arizona Diamondbacks @ Colorado Rockies\", \"date\": \"2012-03-03T20:10:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"0c23356c-e023-47ce-881f-108d93e16736\"}, {\"status\": null, \"home_team\": {\"abr\": \"ATL\", \"score\": 0, \"id\": \"ecb1bcf6-c7a6-572e-a44d-d6e3298486b7\", \"name\": \"Atlanta Braves\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"DET\", \"score\": 0, \"id\": \"14ec4612-5ae8-57d8-bc99-d2c115152ec0\", \"name\": \"Detroit Tigers\"}, \"name\": \"Detroit Tigers @ Atlanta Braves\", \"date\": \"2012-03-03T18:05:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"ad7d6e4d-3daa-4913-bf54-3a8fe9b5b8b5\"}, {\"status\": null, \"home_team\": {\"abr\": \"ATL\", \"score\": 0, \"id\": \"ecb1bcf6-c7a6-572e-a44d-d6e3298486b7\", \"name\": \"Atlanta Braves\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"DET\", \"score\": 0, \"id\": \"14ec4612-5ae8-57d8-bc99-d2c115152ec0\", \"name\": \"Detroit Tigers\"}, \"name\": \"Detroit Tigers @ Atlanta Braves\", \"date\": \"2012-03-03T18:05:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"d09b1c3f-d116-400a-8474-c57711575ec8\"}, {\"status\": null, \"home_team\": {\"abr\": \"CIN\", \"score\": 0, \"id\": \"cc544806-d128-5e0a-b46a-894a0878fd5b\", \"name\": \"Cincinnati Reds\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"CLE\", \"score\": 0, \"id\": \"384b89dd-3840-591c-9f22-81013718cc07\", \"name\": \"Cleveland Indians\"}, \"name\": \"Cleveland Indians @ Cincinnati Reds\", \"date\": \"2012-03-03T20:05:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"7f45a962-b7da-4c4a-b7f4-d4618a872aba\"}, {\"status\": null, \"home_team\": {\"abr\": \"CIN\", \"score\": 0, \"id\": \"cc544806-d128-5e0a-b46a-894a0878fd5b\", \"name\": \"Cincinnati Reds\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"CLE\", \"score\": 0, \"id\": \"384b89dd-3840-591c-9f22-81013718cc07\", \"name\": \"Cleveland Indians\"}, \"name\": \"Cleveland Indians @ Cincinnati Reds\", \"date\": \"2012-03-03T20:05:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"423aed98-f72e-4313-884e-2cbb9cc8f0f7\"}, {\"status\": null, \"home_team\": {\"abr\": \"HOU\", \"score\": 0, \"id\": \"69daa5ca-c6bd-59e0-b409-6206e297647a\", \"name\": \"Houston Astros\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"WSH\", \"score\": 0, \"id\": \"512ebd74-5a5e-5064-b870-2fe82e839348\", \"name\": \"Washington Nationals\"}, \"name\": \"Washington Nationals @ Houston Astros\", \"date\": \"2012-03-03T18:05:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"44adfbf0-4024-4af6-aa61-c7ed0e4e37bb\"}, {\"status\": null, \"home_team\": {\"abr\": \"HOU\", \"score\": 0, \"id\": \"69daa5ca-c6bd-59e0-b409-6206e297647a\", \"name\": \"Houston Astros\"}, \"season_year\": 2012, \"away_team\": {\"abr\": \"WSH\", \"score\": 0, \"id\": \"512ebd74-5a5e-5064-b870-2fe82e839348\", \"name\": \"Washington Nationals\"}, \"name\": \"Washington Nationals @ Houston Astros\", \"date\": \"2012-03-03T18:05:00.000000Z\", \"season_type\": \"preseason\", \"id\": \"e027bd86-94c1-4fa5-852a-179be5851a88\"}]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/events/last?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Tue, 24 Jan 2012 17:48:07 GMT
+      age: 
+      - "0"
+      content-type: 
+      - application/json
+      connection: 
+      - keep-alive
+      cache-control: 
+      - no-cache
+      pragma: 
+      - no-cache
+      x-mashery-responder: 
+      - proxylb-p-us-east-1d-09.mashery.com
+      content-length: 
+      - "6909"
+      via: 
+      - 1.1 varnish
+      x-varnish: 
+      - "1306975634"
+      server: 
+      - nginx/1.0.10
+      accept-ranges: 
+      - bytes
+    body: "[{\"status\": \" FINAL\", \"home_team\": {\"abr\": \"STL\", \"score\": 6, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"TEX\", \"score\": 2, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"name\": \"Texas Rangers @ St Louis Cardinals\", \"date\": \"2011-10-28T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"91245ae7-4efb-5717-b511-b772326447c9\"}, {\"status\": \" FINAL\", \"home_team\": {\"abr\": \"STL\", \"score\": 10, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"TEX\", \"score\": 9, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"name\": \"Texas Rangers @ St Louis Cardinals\", \"date\": \"2011-10-27T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"b24bae68-d70a-5d31-a2c3-a2189424dfb6\"}, {\"status\": \"POSTPONED\", \"home_team\": {\"abr\": \"STL\", \"score\": 0, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"TEX\", \"score\": 0, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"name\": \"Texas Rangers @ St Louis Cardinals\", \"date\": \"2011-10-26T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"1b6ae6d0-e573-5bc5-b5c4-6935aa49901d\"}, {\"status\": \" FINAL\", \"home_team\": {\"abr\": \"TEX\", \"score\": 4, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"STL\", \"score\": 2, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"name\": \"St Louis Cardinals @ Texas Rangers\", \"date\": \"2011-10-24T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"6f28c27a-478e-51ba-a86c-4c257429d24d\"}, {\"status\": \" FINAL\", \"home_team\": {\"abr\": \"TEX\", \"score\": 4, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"STL\", \"score\": 0, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"name\": \"St Louis Cardinals @ Texas Rangers\", \"date\": \"2011-10-23T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"cd274b41-be08-5433-b000-73e7bf660612\"}, {\"status\": \" FINAL\", \"home_team\": {\"abr\": \"TEX\", \"score\": 7, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"STL\", \"score\": 16, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"name\": \"St Louis Cardinals @ Texas Rangers\", \"date\": \"2011-10-22T18:57:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"a8a89b74-11b3-506c-8e09-99b24d3082da\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"STL\", \"score\": 1, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"TEX\", \"score\": 2, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"name\": \"Texas Rangers @ St Louis Cardinals\", \"date\": \"2011-10-20T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"821cacd0-32d7-5230-bfd0-049a630980fd\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"STL\", \"score\": 3, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"TEX\", \"score\": 2, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"name\": \"Texas Rangers @ St Louis Cardinals\", \"date\": \"2011-10-19T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"f1ffb713-91b5-5499-9eba-6d1f07a6c31c\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"MIL\", \"score\": 6, \"id\": \"ead2644f-9846-5962-aa13-596b3f209613\", \"name\": \"Milwaukee Brewers\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"STL\", \"score\": 12, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"name\": \"St Louis Cardinals @ Milwaukee Brewers\", \"date\": \"2011-10-16T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"27273dd3-0944-59b6-8b52-a96b3b2fd3ea\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"TEX\", \"score\": 15, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"DET\", \"score\": 5, \"id\": \"14ec4612-5ae8-57d8-bc99-d2c115152ec0\", \"name\": \"Detroit Tigers\"}, \"name\": \"Detroit Tigers @ Texas Rangers\", \"date\": \"2011-10-15T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"4d1480e4-dd7b-55ac-b2a0-cc7a3aae9fb0\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"STL\", \"score\": 7, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"MIL\", \"score\": 1, \"id\": \"ead2644f-9846-5962-aa13-596b3f209613\", \"name\": \"Milwaukee Brewers\"}, \"name\": \"Milwaukee Brewers @ St Louis Cardinals\", \"date\": \"2011-10-14T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"2ae27d01-6603-5ee7-b05b-475d6e980cfd\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"STL\", \"score\": 2, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"MIL\", \"score\": 4, \"id\": \"ead2644f-9846-5962-aa13-596b3f209613\", \"name\": \"Milwaukee Brewers\"}, \"name\": \"Milwaukee Brewers @ St Louis Cardinals\", \"date\": \"2011-10-13T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"a72c118c-4e58-517f-917b-058d994f1b20\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"DET\", \"score\": 7, \"id\": \"14ec4612-5ae8-57d8-bc99-d2c115152ec0\", \"name\": \"Detroit Tigers\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"TEX\", \"score\": 5, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"name\": \"Texas Rangers @ Detroit Tigers\", \"date\": \"2011-10-13T16:19:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"2064fd95-1df2-55f1-9606-a9ae71664050\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"DET\", \"score\": 3, \"id\": \"14ec4612-5ae8-57d8-bc99-d2c115152ec0\", \"name\": \"Detroit Tigers\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"TEX\", \"score\": 7, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"name\": \"Texas Rangers @ Detroit Tigers\", \"date\": \"2011-10-12T16:19:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"4d09598c-43dc-5767-a48a-0f11a03843f7\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"STL\", \"score\": 4, \"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"MIL\", \"score\": 3, \"id\": \"ead2644f-9846-5962-aa13-596b3f209613\", \"name\": \"Milwaukee Brewers\"}, \"name\": \"Milwaukee Brewers @ St Louis Cardinals\", \"date\": \"2011-10-12T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"bc4c581a-3fdc-517c-9b9d-a0d1e6d19b2d\"}, {\"status\": \"FINAL\", \"home_team\": {\"abr\": \"DET\", \"score\": 5, \"id\": \"14ec4612-5ae8-57d8-bc99-d2c115152ec0\", \"name\": \"Detroit Tigers\"}, \"season_year\": 2011, \"away_team\": {\"abr\": \"TEX\", \"score\": 2, \"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, \"name\": \"Texas Rangers @ Detroit Tigers\", \"date\": \"2011-10-11T20:05:00.000000Z\", \"season_type\": \"postseason\", \"id\": \"083cad3e-abd3-5659-a9a9-2c8ba474e889\"}]"
+    http_version: "1.1"

@@ -31,7 +31,7 @@ module Fanfeedr
 
   class << self
     attr_accessor :api_key
-    attr_accessor :api_type
+    attr_accessor :tier
   end
   
 end

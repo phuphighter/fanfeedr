@@ -1,0 +1,67 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/divisions?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      date: 
+      - Tue, 24 Jan 2012 17:41:57 GMT
+      age: 
+      - "0"
+      content-type: 
+      - application/json
+      connection: 
+      - keep-alive
+      cache-control: 
+      - no-cache
+      pragma: 
+      - no-cache
+      x-mashery-responder: 
+      - proxylb-p-us-east-1b-01.mashery.com
+      content-length: 
+      - "486"
+      via: 
+      - 1.1 varnish
+      x-varnish: 
+      - "1306972988"
+      server: 
+      - nginx/1.0.10
+      accept-ranges: 
+      - bytes
+    body: "[{\"id\": \"83bc6fe0-8b91-5504-b7c1-a32b2ca6ccaf\", \"name\": \"National League Central\"}, {\"id\": \"6c0420dd-d661-542e-b788-2aa7909bb600\", \"name\": \"American League Central\"}, {\"id\": \"66f78cb7-78f0-5b9b-bd2d-6df126788459\", \"name\": \"National League East\"}, {\"id\": \"a5bc5593-7fb7-524c-a9da-6536be7d0371\", \"name\": \"American League East\"}, {\"id\": \"62f96144-074d-5059-8e68-8e5cdf0c9dbf\", \"name\": \"National League West\"}, {\"id\": \"ee685564-c20b-5420-be9b-e67e47ca95e2\", \"name\": \"American League West\"}]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/divisions/83bc6fe0-8b91-5504-b7c1-a32b2ca6ccaf?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 403
+      message: Forbidden
+    headers: 
+      date: 
+      - Tue, 24 Jan 2012 17:48:00 GMT
+      content-type: 
+      - text/xml
+      connection: 
+      - keep-alive
+      x-mashery-error-code: 
+      - ERR_403_DEVELOPER_INACTIVE
+      x-mashery-responder: 
+      - proxylb-p-us-east-1d-08.mashery.com
+      content-length: 
+      - "31"
+      server: 
+      - Mashery Proxy
+      accept-ranges: 
+      - bytes
+    body: <h1>403 Developer Inactive</h1>
+    http_version: "1.1"

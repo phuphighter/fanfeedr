@@ -1,0 +1,30 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/persons?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 403
+      message: Forbidden
+    headers: 
+      x-mashery-error-code: 
+      - ERR_403_DEVELOPER_INACTIVE
+      content-type: 
+      - text/xml
+      x-mashery-responder: 
+      - proxylb-p-us-east-1b-02.mashery.com
+      connection: 
+      - keep-alive
+      date: 
+      - Tue, 24 Jan 2012 19:44:47 GMT
+      accept-ranges: 
+      - bytes
+      content-length: 
+      - "31"
+      server: 
+      - Mashery Proxy
+    body: <h1>403 Developer Inactive</h1>
+    http_version: "1.1"

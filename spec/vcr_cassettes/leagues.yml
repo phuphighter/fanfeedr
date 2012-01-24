@@ -1,0 +1,75 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      accept-ranges: 
+      - bytes
+      cache-control: 
+      - no-cache
+      server: 
+      - nginx/1.0.10
+      content-length: 
+      - "3102"
+      via: 
+      - 1.1 varnish
+      x-mashery-responder: 
+      - proxylb-p-us-east-1b-01.mashery.com
+      date: 
+      - Tue, 24 Jan 2012 17:25:55 GMT
+      pragma: 
+      - no-cache
+      connection: 
+      - keep-alive
+      age: 
+      - "89"
+      content-type: 
+      - application/json
+      x-varnish: 
+      - 1306966945 1306966349
+    body: "[{\"id\": \"92c56b74-7860-58ef-8f3d-92402d0fe0cb\", \"name\": \"PGA\"}, {\"id\": \"20f0857f-3c43-5f50-acfc-879f838ee853\", \"name\": \"MLB\"}, {\"id\": \"4f63c23e-bdc4-575d-9492-25e54e8d4925\", \"name\": \"Baseball\"}, {\"id\": \"25c69042-7c5b-59b7-a3c7-636048e55b92\", \"name\": \"Basketball\"}, {\"id\": \"f65226d8-fbf7-5033-a7a0-50de55b57968\", \"name\": \"NBA\"}, {\"id\": \"58839c69-5c60-5921-a5ed-1205c2ebcac5\", \"name\": \"NCAA Women\"}, {\"id\": \"1fa67523-cef0-5a64-9e21-9af5631109d5\", \"name\": \"Boxing\"}, {\"id\": \"11064ee6-6b14-550d-9070-632234ef662c\", \"name\": \"Golf\"}, {\"id\": \"961f07ae-1e75-54d6-9951-48b05cc58758\", \"name\": \"NCAA Football\"}, {\"id\": \"13962b74-cab5-5d0a-93c8-466b6a3fa342\", \"name\": \"NFL\"}, {\"id\": \"d9737abb-b643-5e55-9447-56977017272c\", \"name\": \"All Sports\"}, {\"id\": \"c4f5c421-8c99-5597-b1f9-c2a506dd7891\", \"name\": \"Uncategorized\"}, {\"id\": \"8e5c52c9-b7c0-5343-8141-122e12fdc48f\", \"name\": \"NHL\"}, {\"id\": \"0a3c27d2-a655-58e4-a49c-9f3c7411c710\", \"name\": \"Soccer\"}, {\"id\": \"eb889716-f1cb-583e-9af7-cf8f3fee02e4\", \"name\": \"Olympics\"}, {\"id\": \"d62e33b8-eedf-58e5-88ca-4672254eaa88\", \"name\": \"Other Sports\"}, {\"id\": \"626f73a4-f75e-58c9-97a1-240044177a1c\", \"name\": \"Bowling\"}, {\"id\": \"919cdbb6-8636-5cd8-9751-1cd740113276\", \"name\": \"Horse Racing\"}, {\"id\": \"3673c0c2-2460-5f2e-870e-ff42158ff544\", \"name\": \"Track and Field\"}, {\"id\": \"0f4005bb-b854-5c65-9f28-d564c2e0b7f8\", \"name\": \"Tennis\"}, {\"id\": \"1a8ec5a6-2a53-50b9-baa6-99068cfae363\", \"name\": \"Arena\"}, {\"id\": \"ed98ec78-1af8-5caf-bc57-7be57cf56360\", \"name\": \"Minor League Hockey\"}, {\"id\": \"f6975a1e-7b24-5f95-a0ba-b5e94ecb6fba\", \"name\": \"CFL\"}, {\"id\": \"f6ad29be-2699-5e5e-841c-1c04a2f5dbd4\", \"name\": \"Racing\"}, {\"id\": \"740ae526-8536-5551-8278-2a6a6f060925\", \"name\": \"NCAA Baseball\"}, {\"id\": \"84250b88-7bfe-5d6c-85b1-3769ca833eb6\", \"name\": \"NCAA Field Hockey\"}, {\"id\": \"8cd227a4-3bdc-523c-a38e-064b348e0bcf\", \"name\": \"NCAA Hockey\"}, {\"id\": \"715749e6-c1e9-50be-baee-9463d3968101\", \"name\": \"NCAA Softball\"}, {\"id\": \"c3408881-26b0-5d66-b0b6-1959cba8f789\", \"name\": \"NCAA Volleyball\"}, {\"id\": \"c18a748a-8465-5048-8aed-b0ee9a7c2c3c\", \"name\": \"NCAA Lacrosse\"}, {\"id\": \"c904d47a-35aa-59e9-b168-6a0a6b66f7c2\", \"name\": \"NCAA Soccer\"}, {\"id\": \"da0797cb-6fdc-56ee-89d8-c2df8d74ed48\", \"name\": \"WNBA\"}, {\"id\": \"e62e6785-5e9f-5fa3-89a6-b659df05642b\", \"name\": \"IHL\"}, {\"id\": \"d40e07a0-8ff8-5e23-b7be-2f212e3bd307\", \"name\": \"NASCAR\"}, {\"id\": \"42aedcbb-0668-5ca4-9875-93e115c9939e\", \"name\": \"NHRA\"}, {\"id\": \"6a72f772-9933-5d28-abfb-11fdcfbf7ec7\", \"name\": \"Formula One\"}, {\"id\": \"5ae97c77-b353-5e53-8db7-8c8d1bf07135\", \"name\": \"College Golf\"}, {\"id\": \"aba3f264-2b4c-591c-893a-76e19be2aeb3\", \"name\": \"EGA\"}, {\"id\": \"9ed9170c-f1f1-5b3d-bedf-875cc2524bf8\", \"name\": \"Cycling\"}, {\"id\": \"7c2875c7-e477-5af8-967e-77212d2588dd\", \"name\": \"Minor League Baseball\"}, {\"id\": \"42899fbf-2960-5feb-a43a-fb8fd5dd76d4\", \"name\": \"Minor League Basketball\"}, {\"id\": \"0d931041-b747-51db-ac54-b7db26328315\", \"name\": \"IRL\"}, {\"id\": \"ba3e3a7e-8184-5791-bf78-b43c8a61fba3\", \"name\": \"Hockey\"}, {\"id\": \"3947fb57-87df-54bc-9f29-925f41870d13\", \"name\": \"WPS\"}, {\"id\": \"ee80f32e-7b1a-51fd-ada0-70bb3f908845\", \"name\": \"NCAA Basketball\"}]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      accept-ranges: 
+      - bytes
+      cache-control: 
+      - no-cache
+      server: 
+      - nginx/1.0.10
+      via: 
+      - 1.1 varnish
+      content-length: 
+      - "125"
+      x-mashery-responder: 
+      - proxylb-p-us-east-1d-08.mashery.com
+      date: 
+      - Tue, 24 Jan 2012 17:25:55 GMT
+      age: 
+      - "0"
+      connection: 
+      - keep-alive
+      pragma: 
+      - no-cache
+      x-varnish: 
+      - "1306966947"
+      content-type: 
+      - application/json
+    body: "{\"gender\": \"M\", \"levels\": [\"professional\"], \"sport\": \"Baseball\", \"name\": \"MLB\", \"id\": \"20f0857f-3c43-5f50-acfc-879f838ee853\"}"
+    http_version: "1.1"

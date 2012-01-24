@@ -1,0 +1,67 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/teams?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      cache-control: 
+      - no-cache
+      x-mashery-responder: 
+      - proxylb-p-us-east-1c-04.mashery.com
+      content-type: 
+      - application/json
+      via: 
+      - 1.1 varnish
+      connection: 
+      - keep-alive
+      date: 
+      - Tue, 24 Jan 2012 19:30:44 GMT
+      accept-ranges: 
+      - bytes
+      age: 
+      - "0"
+      server: 
+      - nginx/1.0.10
+      pragma: 
+      - no-cache
+      content-length: 
+      - "2285"
+      x-varnish: 
+      - "1307013712"
+    body: "[{\"id\": \"f4d21620-75da-53cc-b9f2-4b463e7232ab\", \"name\": \"Arizona Diamondbacks\"}, {\"id\": \"ecb1bcf6-c7a6-572e-a44d-d6e3298486b7\", \"name\": \"Atlanta Braves\"}, {\"id\": \"4b698c61-059b-5b10-8de1-543379928f31\", \"name\": \"Baltimore Orioles\"}, {\"id\": \"10df29dc-ed16-524f-8e10-b13e951523d3\", \"name\": \"Boston Red Sox\"}, {\"id\": \"d69fbb27-43c1-58d9-90f4-dc6489a4aebd\", \"name\": \"Chicago Cubs\"}, {\"id\": \"af3afa0f-67d1-549b-b27b-29e824e59df6\", \"name\": \"Chicago White Sox\"}, {\"id\": \"cc544806-d128-5e0a-b46a-894a0878fd5b\", \"name\": \"Cincinnati Reds\"}, {\"id\": \"384b89dd-3840-591c-9f22-81013718cc07\", \"name\": \"Cleveland Indians\"}, {\"id\": \"f0d7a0fc-2ad1-51e5-93b0-c3e89b00a0cd\", \"name\": \"Colorado Rockies\"}, {\"id\": \"14ec4612-5ae8-57d8-bc99-d2c115152ec0\", \"name\": \"Detroit Tigers\"}, {\"id\": \"4e77370e-ca03-58f4-b32d-932ffde548cf\", \"name\": \"Florida Marlins\"}, {\"id\": \"69daa5ca-c6bd-59e0-b409-6206e297647a\", \"name\": \"Houston Astros\"}, {\"id\": \"4b215490-d779-50a9-9ec3-f54a8286b1c1\", \"name\": \"Kansas City Royals\"}, {\"id\": \"6797a37a-1531-5e67-bd9d-c59e3f45c899\", \"name\": \"Los Angeles Angels\"}, {\"id\": \"8d4d27e1-19d6-5b69-993b-60f66c956b15\", \"name\": \"Los Angeles Dodgers\"}, {\"id\": \"ead2644f-9846-5962-aa13-596b3f209613\", \"name\": \"Milwaukee Brewers\"}, {\"id\": \"1af7ee16-2a34-5f09-a2c9-1804b7521bba\", \"name\": \"Minnesota Twins\"}, {\"id\": \"120afaf3-6e47-53f4-99ca-a55804f270b1\", \"name\": \"New York Mets\"}, {\"id\": \"4c42afa1-fae9-5e74-ae9a-3a5c7b714885\", \"name\": \"New York Yankees\"}, {\"id\": \"979fe516-eaa3-5a66-9813-2cf4d8b6d24d\", \"name\": \"Oakland A's\"}, {\"id\": \"c31840f6-153a-560d-b2fa-ca89bd318af8\", \"name\": \"Philadelphia Phillies\"}, {\"id\": \"015f6f58-e288-538d-86d2-64d542085cbd\", \"name\": \"Pittsburgh Pirates\"}, {\"id\": \"b1ae7ef2-20e6-5b48-9afe-8a44c13752f1\", \"name\": \"San Diego Padres\"}, {\"id\": \"58211742-c2eb-5306-9193-3488c1de5656\", \"name\": \"Seattle Mariners\"}, {\"id\": \"210147af-71a4-50a5-914f-6456450538aa\", \"name\": \"San Francisco Giants\"}, {\"id\": \"075824df-e19e-52d0-b987-af5b796c4358\", \"name\": \"St Louis Cardinals\"}, {\"id\": \"18e6bdba-5808-52d0-b0fa-71bf601004d7\", \"name\": \"Tampa Bay Rays\"}, {\"id\": \"a513141c-cb5b-558d-9499-eddfe8aa9b9d\", \"name\": \"Texas Rangers\"}, {\"id\": \"bdaecd0f-55fd-5c75-b74d-5b453fc50a37\", \"name\": \"Toronto Blue Jays\"}, {\"id\": \"512ebd74-5a5e-5064-b870-2fe82e839348\", \"name\": \"Washington Nationals\"}]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/persons?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 403
+      message: Forbidden
+    headers: 
+      x-mashery-error-code: 
+      - ERR_403_DEVELOPER_INACTIVE
+      content-type: 
+      - text/xml
+      x-mashery-responder: 
+      - proxylb-p-us-east-1b-02.mashery.com
+      connection: 
+      - keep-alive
+      date: 
+      - Tue, 24 Jan 2012 19:44:47 GMT
+      accept-ranges: 
+      - bytes
+      content-length: 
+      - "31"
+      server: 
+      - Mashery Proxy
+    body: <h1>403 Developer Inactive</h1>
+    http_version: "1.1"

@@ -1,0 +1,38 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/geo?api_key=foobar&q=dallas
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-varnish: 
+      - "1307013705"
+      accept-ranges: 
+      - bytes
+      content-type: 
+      - application/json
+      connection: 
+      - keep-alive
+      via: 
+      - 1.1 varnish
+      cache-control: 
+      - no-cache
+      content-length: 
+      - "3052"
+      server: 
+      - nginx/1.0.10
+      pragma: 
+      - no-cache
+      x-mashery-responder: 
+      - proxylb-p-us-east-1c-04.mashery.com
+      date: 
+      - Tue, 24 Jan 2012 19:30:44 GMT
+      age: 
+      - "0"
+    body: "[{\"lat\": 32.85, \"city\": \"Dallas\", \"lon\": -96.85, \"id\": \"930\"}, {\"lat\": 32.83, \"city\": \"Fort Worth\", \"lon\": -97.05, \"id\": \"935\"}, {\"lat\": 33.2, \"city\": \"Denton\", \"lon\": -97.1, \"id\": \"932\"}, {\"lat\": 33.07, \"city\": \"Greenville\", \"lon\": -96.05, \"id\": \"937\"}, {\"lat\": 32.08, \"city\": \"Corsicana\", \"lon\": -96.47, \"id\": \"929\"}, {\"lat\": 33.72, \"city\": \"Sherman\", \"lon\": -96.67, \"id\": \"957\"}, {\"lat\": 32.78, \"city\": \"Mineral Wells\", \"lon\": -98.07, \"id\": \"950\"}, {\"lat\": 31.62, \"city\": \"Waco\", \"lon\": -97.22, \"id\": \"963\"}, {\"lat\": 32.35, \"city\": \"Tyler\", \"lon\": -95.27, \"id\": \"960\"}, {\"lat\": 31.78, \"city\": \"Palestine\", \"lon\": -95.63, \"id\": \"951\"}, {\"lat\": 34.3, \"city\": \"Ardmore\", \"lon\": -97.02, \"id\": \"830\"}, {\"lat\": 32.47, \"city\": \"Longview\", \"lon\": -94.73, \"id\": \"945\"}, {\"lat\": 31.1, \"city\": \"Temple\", \"lon\": -97.35, \"id\": \"959\"}, {\"lat\": 33.97, \"city\": \"Wichita Falls\", \"lon\": -98.48, \"id\": \"964\"}, {\"lat\": 31.106, \"city\": \"Hidalgo\", \"lon\": -97.6475, \"id\": \"285\"}, {\"lat\": 31.08, \"city\": \"Killeen\", \"lon\": -97.68, \"id\": \"942\"}, {\"lat\": 34.78, \"city\": \"Ada\", \"lon\": -96.68, \"id\": \"828\"}, {\"lat\": 31.8, \"city\": \"Brownwood\", \"lon\": -98.95, \"id\": \"926\"}, {\"lat\": 30.67, \"city\": \"Bryan\", \"lon\": -96.55, \"id\": \"927\"}, {\"lat\": 34.83, \"city\": \"McAlester\", \"lon\": -95.92, \"id\": \"835\"}, {\"lat\": 31.42, \"city\": \"Lufkin\", \"lon\": -94.8, \"id\": \"947\"}, {\"lat\": 34.57, \"city\": \"Lawton\", \"lon\": -98.42, \"id\": \"834\"}, {\"lat\": 30.72, \"city\": \"Huntsville\", \"lon\": -95.55, \"id\": \"941\"}, {\"lat\": 33.45, \"city\": \"Texarkana\", \"lon\": -93.98, \"id\": \"334\"}, {\"lat\": 35.23, \"city\": \"Seminole\", \"lon\": -96.67, \"id\": \"840\"}, {\"lat\": 35.05, \"city\": \"Chickasha\", \"lon\": -97.92, \"id\": \"832\"}, {\"lat\": 32.42, \"city\": \"Abilene\", \"lon\": -99.68, \"id\": \"917\"}, {\"lat\": 32.47, \"city\": \"Shreveport\", \"lon\": -93.82, \"id\": \"578\"}, {\"lat\": 34.17, \"city\": \"Vernon\", \"lon\": -99.3, \"id\": \"961\"}, {\"lat\": 35.25, \"city\": \"Norman\", \"lon\": -97.48, \"id\": \"837\"}, {\"lat\": 30.3, \"city\": \"Austin\", \"lon\": -97.7, \"id\": \"920\"}, {\"lat\": 35.4, \"city\": \"Oklahoma City\", \"lon\": -97.6, \"id\": \"838\"}, {\"lat\": 35.5376, \"city\": \"Madill\", \"lon\": -96.9247, \"id\": \"277\"}, {\"lat\": 34.65, \"city\": \"Altus\", \"lon\": -99.27, \"id\": \"829\"}, {\"lat\": 32.6, \"city\": \"Minden\", \"lon\": -93.3, \"id\": \"574\"}, {\"lat\": 29.98, \"city\": \"Houston\", \"lon\": -95.37, \"id\": \"940\"}, {\"lat\": 29.97, \"city\": null, \"lon\": -95.35, \"id\": \"939\"}, {\"lat\": 35.67, \"city\": \"Muskogee\", \"lon\": -95.37, \"id\": \"836\"}, {\"lat\": 35.33, \"city\": \"Fort Smith\", \"lon\": -94.37, \"id\": \"329\"}, {\"lat\": 31.77, \"city\": \"Natchitoches\", \"lon\": -93.08, \"id\": \"576\"}, {\"lat\": 33.22, \"city\": \"El Dorado\", \"lon\": -92.82, \"id\": \"327\"}, {\"lat\": 31.43, \"city\": \"Goodfellow\", \"lon\": -100.4, \"id\": \"955\"}, {\"lat\": 36.17, \"city\": \"Stillwater\", \"lon\": -97.08, \"id\": \"841\"}, {\"lat\": 33.6, \"city\": \"Camden\", \"lon\": -92.82, \"id\": \"326\"}, {\"lat\": 36.2, \"city\": \"Tulsa\", \"lon\": -95.9, \"id\": \"842\"}, {\"lat\": 34.48, \"city\": \"Hot Springs\", \"lon\": -93.1, \"id\": \"330\"}, {\"lat\": 32.72, \"city\": \"Snyder\", \"lon\": -100.92, \"id\": \"958\"}, {\"lat\": 29.53, \"city\": \"San Antonio\", \"lon\": -98.47, \"id\": \"956\"}]"
+    http_version: "1.1"

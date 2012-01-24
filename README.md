@@ -8,38 +8,34 @@ As a gem:
 
     sudo gem install fanfeedr
 
-As a plugin (in your Rails directory:
+In a gemfile:
 
-    script/plugin install git://github.com/phuphighter/fanfeedr.git
+    gem 'fanfeedr'
     
 ## Get a Fanfeedr API key
 
-Sign up for a Fanfeedr API key: [http://developer.fanfeedr.com/member/register](http://developer.fanfeedr.com/member/register)
+Sign up for a Fanfeedr API key: [http://developer.fanfeedr.com/page/API_Plans_and_Pricing](http://developer.fanfeedr.com/page/API_Plans_and_Pricing)
     
 ## Usage
 
 ### Instantiate a client
 
-    >> fanfeedr = Fanfeedr::Client.new(:api_key => 'your_api_key', :api_type => 'your_api_type')
-    
-### or configure once
-
-    >> Fanfeedr.configure do |config|
-    >>   config.api_key = 'your_api_key'
-    >>   config.api_type = 'your_api_type'
-    >> end
-    >> fanfeedr = Fanfeedr::Client.new
+    >> @client = Fanfeedr::Client.new(:api_key => 'your_api_key', :tier => 'your_tier')
     
 #### Examples
-
-    >> fanfeedr.scores(:resource => "team://mlb/texas_rangers", :rows => '2')
-    => [{"defaultdict(<type 'str'>, {'eventlink': u'event://mlb/2010/05/15/games/texas_rangers_toronto_blue_jays', 'winteamlocationshort': u'Toronto', 'loseteamlogo': u'/img/teams/small/texas_rangers_25.png', 'is_college': u'False', 'loseteamlocation': u'Texas', 'winteamname': u'Blue Jays', 'loseteamfullname': u'Rangers', 'sport': u'Baseball', 'winscore': u'6', 'league': u'league://mlb', 'losescore': u'0', 'loseteamlink': u'team://mlb/texas_rangers', 'loseteamlocationshort': u'Texas', 'season_type': u'None', 'winteamfullname': u'Blue Jays', 'winteamlink': u'team://mlb/toronto_blue_jays', 'season_year': u'None', 'winteamlogo': u'/img/teams/small/toronto_blue_jays_25.png', 'winteamhomeaway': u'A', 'winteamlocation': u'Toronto', 'loseteamname': u'Rangers'})"=>[nil]}]
     
-    >> fanfeedr.schedule(:resource => "team://nba/boston_celtics")
-    => [{"name"=>"Boston Celtics @ Orlando Magic", "time"=>"20:30:00", "date"=>Sun, 30 May 2010, "away"=>{"winlose"=>nil, "team"=>"team://nba/boston_celtics", "score"=>nil}, "status"=>nil, "home"=>{"winlose"=>nil, "team"=>"team://nba/orlando_magic", "score"=>nil}, "resource_text"=>"event://nba/2010/05/30/games/boston_celtics_orlando_magic"}]
+    >> @leagues = @client.leagues(:id => "20f0857f-3c43-5f50-acfc-879f838ee853")
+    >> @leagues.size
+    => 45
 
+    >> @client.leagues(:id => "20f0857f-3c43-5f50-acfc-879f838ee853")
+    => {"sport"=>"Baseball", "name"=>"MLB", "gender"=>"M", "id"=>"20f0857f-3c43-5f50-acfc-879f838ee853", "levels"=>["professional"]}
+
+    >> @client.conferences(:id => "384fbe7c-7694-51e8-bf0a-7d0d63ba9211", :parent_resource => "leagues", :resource_id => "20f0857f-3c43-5f50-acfc-879f838ee853")
+    => {"id"=>"384fbe7c-7694-51e8-bf0a-7d0d63ba9211", "level"=>"professional", "name"=>"National League"}
+    
 ## Copyright
 
 Contact me if you have any suggestions and feel free to fork it!
 
-Copyright (c) 2009 Johnny Khai Nguyen, released under the MIT license
+Copyright (c) 2012 Johnny Khai Nguyen, released under the MIT license

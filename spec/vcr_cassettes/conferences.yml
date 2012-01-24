@@ -1,0 +1,75 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/conferences?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-varnish: 
+      - "1306966951"
+      connection: 
+      - keep-alive
+      x-mashery-responder: 
+      - proxylb-p-us-east-1d-07.mashery.com
+      via: 
+      - 1.1 varnish
+      pragma: 
+      - no-cache
+      date: 
+      - Tue, 24 Jan 2012 17:25:55 GMT
+      cache-control: 
+      - no-cache
+      content-length: 
+      - "150"
+      age: 
+      - "0"
+      content-type: 
+      - application/json
+      server: 
+      - nginx/1.0.10
+      accept-ranges: 
+      - bytes
+    body: "[{\"id\": \"384fbe7c-7694-51e8-bf0a-7d0d63ba9211\", \"name\": \"National League\"}, {\"id\": \"6e20fb07-5b8b-58c7-b02a-ab351638aff8\", \"name\": \"American League\"}]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: http://ffapi.fanfeedr.com:80/basic/api/leagues/20f0857f-3c43-5f50-acfc-879f838ee853/conferences/384fbe7c-7694-51e8-bf0a-7d0d63ba9211?api_key=foobar
+    body: 
+    headers: 
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      connection: 
+      - keep-alive
+      x-varnish: 
+      - "1306967660"
+      x-mashery-responder: 
+      - proxylb-p-us-east-1d-07.mashery.com
+      via: 
+      - 1.1 varnish
+      content-length: 
+      - "98"
+      cache-control: 
+      - no-cache
+      pragma: 
+      - no-cache
+      date: 
+      - Tue, 24 Jan 2012 17:27:59 GMT
+      content-type: 
+      - application/json
+      age: 
+      - "0"
+      server: 
+      - nginx/1.0.10
+      accept-ranges: 
+      - bytes
+    body: "{\"id\": \"384fbe7c-7694-51e8-bf0a-7d0d63ba9211\", \"name\": \"National League\", \"level\": \"professional\"}"
+    http_version: "1.1"
